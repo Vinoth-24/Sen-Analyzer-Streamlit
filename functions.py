@@ -65,7 +65,9 @@ def remove_stopwords(words):
 
 # Lemmatization function
 import spacy
-nlp = spacy.load('en_core_web_sm')
+import en_core_web_md
+nlp = en_core_web_md.load()
+#nlp = spacy.load('en_core_web_sm')
 def lemmatize(sample):
     doc = nlp(sample)
 
