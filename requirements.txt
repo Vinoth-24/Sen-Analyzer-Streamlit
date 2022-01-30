@@ -5,4 +5,3 @@ gunicorn==19.9.0
 nltk
 contractions==0.0.58
 spacy
-https://github.com/explosion/spacy-models/releases/download/en_core_web_md-2.0.0/en_core_web_md-2.0.0.tar.gz #egg=en_core_web_md==2.0.0
