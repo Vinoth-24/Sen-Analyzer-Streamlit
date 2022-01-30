@@ -19,8 +19,8 @@ st.set_page_config(page_title="App-Streamlit",page_icon="random",layout="wide",
 
 
 def loading_model():
-    loaded_model = pickle.load(open("C:\\Users\\new\\Deplyment_Streamlit\\finalized_model.sav", 'rb'))
-    loaded_vec = CountVectorizer(decode_error="replace",vocabulary=pickle.load(open("C:\\Users\\new\\Deplyment_Streamlit\\feature.pkl", "rb")))
+    loaded_model = pickle.load(open("finalized_model.sav", 'rb'))
+    loaded_vec = CountVectorizer(decode_error="replace",vocabulary=pickle.load(open("feature.pkl", "rb")))
     return loaded_model, loaded_vec
 with st.spinner('Model is being loaded..'):
     model, vec = loading_model() 
@@ -51,7 +51,7 @@ def decor():
     </div>
     """
     st.markdown(html_temp,unsafe_allow_html=True)
-    image = Image.open('C:\\Users\\new\\Deplyment_Streamlit\\sentiment-analysis.jpg')
+    image = Image.open('sentiment-analysis.jpg')
     st.image(image, caption='')    
 
 #--------------------------------------------------------------------------------------------------------------------------------
