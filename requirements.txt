@@ -5,3 +5,4 @@ gunicorn==19.9.0
 nltk
 contractions==0.0.58
 spacy
+python -m spacy download en_core_web_sm
